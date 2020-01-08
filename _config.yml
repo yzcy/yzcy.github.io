@@ -1,0 +1,74 @@
+# Configurations
+markdown: kramdown
+markdown_ext:  markdown,mkdown,mkdn,mkd,md
+highlighter: rouge
+
+# Needed for backward compatibility
+plugins: [jekyll-paginate]
+
+# Permalinks
+permalink:        /blog/:year/:month/:day/:title
+
+# Setup
+#title:            'Jekyll Metro'
+title:            'Kevin zhang'
+tagline:          'this is a first'
+description:      'A Sample blog using kevin zhang'
+url:              'https://yzcy.github.io/'
+baseurl:          ''
+
+# Navigation
+navigation:
+- text: About
+  url: /about/
+- text: Resume
+  url: /resume/
+- text: Blog
+  url: /blog/
+- text: Tags
+  url: /tags/
+- text: Archive
+  url : /archive/
+- text: Search
+  url: /search/
+
+
+# Author Details
+#author:         'Abdel Raoof Olakara'
+author:         'Kevin zhang'
+
+#Social Media links (Use complete URL except for email)
+dribbble:
+email:
+facebook:       'https://www.facebook.com/profile.php?id=100010833971458'
+flickr:
+github:         'https://github.com/yzcy/'
+gplus:          'https://plus.google.com/111755744090455561792'
+instagram:
+pinterest:
+linkedin:       'https://ae.linkedin.com/in/xxx/'
+rss:
+stackoverflow:  'https://stackoverflow.com/users/story/8198110'
+twitter:        'https://twitter.com/xxx'
+
+# Google Analytics
+gahandler: 'UA-52149651-1'
+
+#if footersvg is 'true' the social media links will be shown top on the copy right in the footer
+footersvg: 'true'
+
+# Disqus
+disqushandler: 'kevin-7'
+
+# txtpen
+txtpenhandler: 'kevin-7'
+
+# Blog Configurations
+paginate: 10 # Posts per page on the blog index
+paginate_path: '/blog/page:num'
+destination: ./_site
+
+# Custom vars
+version:          0.9x beta 2
+
+theme: jekyll-theme-cayman
