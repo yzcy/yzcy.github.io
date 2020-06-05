@@ -21,10 +21,10 @@ Document Server and Nextcloud Docker installation will install the preconfigured
 
 1. Get the latest version of this repository running the command:
 
-```
-git clone https://github.com/ONLYOFFICE/docker-onlyoffice-nextcloud
-cd docker-onlyoffice-nextcloud
-```
+   ~~~shell
+   git clone https://github.com/ONLYOFFICE/docker-onlyoffice-nextcloud
+   cd docker-onlyoffice-nextcloud
+   ~~~
 
 2. edit docker-compose.yaml to bellow
 
@@ -72,15 +72,13 @@ cd docker-onlyoffice-nextcloud
 
 3. Run docker Compose
 
-   Please note**: the action must be performed with **root** rights.
+   **Please note**: the action must be performed with **root** rights.
 
    ~~~shell
    docker-compose up -d
    ~~~
 
-   
-
-**Please note**: you might need to wait a couple of minutes when all the containers are up and running after the above command.
+   **Please note**: you might need to wait a couple of minutes when all the containers are up and running after the above command.
 
 4. Now launch the browser and enter the webserver address. The Nextcloud  wizard webpage will be opened. Enter all the necessary data to complete  the wizard.
 
