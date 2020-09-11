@@ -1,3 +1,13 @@
+---
+layout: post
+title:  Oracle
+date:   2020-06-03 21:28:58
+categories: Oracle
+tags: Oracle
+---
+
+
+
 # rman backup and restore
 
 连接
