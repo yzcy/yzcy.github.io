@@ -213,19 +213,19 @@ delete noprompt archivelog all;
 ```
 
 七、Crosscheck——设置状态为AVAILABLE(可用)或者EXPIRED(不可用)
-   执行crosscheck时，RMAN检查目录中列出的每个备份集或副本并且判断他们是否存在与备份介质上。
-   如果备份集或副本不存在与备份介质上，它就会被标记为expired, 并且不能用于任何还原操作；
-   如果备份集或副本存在与备份介质上，它就会维持available状态。
-   如果以前被标记为expired 的备份集或副本再次存在于备份介质上，crosscheck 命令就会将它标记回available。
+   - 执行crosscheck时，RMAN检查目录中列出的每个备份集或副本并且判断他们是否存在与备份介质上。
+   - 如果备份集或副本不存在与备份介质上，它就会被标记为expired, 并且不能用于任何还原操作；
+   - 如果备份集或副本存在与备份介质上，它就会维持available状态。
+   - 如果以前被标记为expired 的备份集或副本再次存在于备份介质上，crosscheck 命令就会将它标记回available。
    　
    1、RMAN 备份检验的几种状态：
-   expired: 对象不存在于磁盘或磁带。
-   available: 对象处于可用状态。
-   unavailabe: 对象处于不可用状态。
+   - expired: 对象不存在于磁盘或磁带。
+   - available: 对象处于可用状态。
+   - unavailabe: 对象处于不可用状态。
    　
    2、expired 与 obsolette 的区别:
-   （1）对于EXPIRED状态，与crosscheck命令是密切相关的，RMAN通过crosscheck命令检查备份是否存在于备份介质上, 如果不存在，则状态由AVAILABLE改为EXPIRED。
-   （2）对于obsolete状态，是针对MAN备份保留策略来说的，超过了这个保留策略的备份，会被标记为obsolete，但其状态依旧为AVAILABLE，我们可以使用report obsolete来查看已废弃的备份。
+   - （1）对于EXPIRED状态，与crosscheck命令是密切相关的，RMAN通过crosscheck命令检查备份是否存在于备份介质上, 如果不存在，则状态由AVAILABLE改为EXPIRED。
+   - （2）对于obsolete状态，是针对MAN备份保留策略来说的，超过了这个保留策略的备份，会被标记为obsolete，但其状态依旧为AVAILABLE，我们可以使用report obsolete来查看已废弃的备份。
 
 
 ```
