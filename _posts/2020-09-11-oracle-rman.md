@@ -224,8 +224,8 @@ delete noprompt archivelog all;
      - unavailabe: 对象处于不可用状态。
    　
    + 2、expired 与 obsolette 的区别:
-     - （1）对于EXPIRED状态，与crosscheck命令是密切相关的，RMAN通过crosscheck命令检查备份是否存在于备份介质上, 如果不存在，则状态由AVAILABLE改为EXPIRED。
-     - （2）对于obsolete状态，是针对MAN备份保留策略来说的，超过了这个保留策略的备份，会被标记为obsolete，但其状态依旧为AVAILABLE，我们可以使用report obsolete来查看已废弃的备份。
+      1. 对于EXPIRED状态，与crosscheck命令是密切相关的，RMAN通过crosscheck命令检查备份是否存在于备份介质上, 如果不存在，则状态由AVAILABLE改为EXPIRED。
+      2. 对于obsolete状态，是针对MAN备份保留策略来说的，超过了这个保留策略的备份，会被标记为obsolete，但其状态依旧为AVAILABLE，我们可以使用report obsolete来查看已废弃的备份。
 
 
 ```
