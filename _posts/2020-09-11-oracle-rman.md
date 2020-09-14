@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Oracle
+title:  rman
 date:   2020-09-11 8:28:58
 categories: Oracle
 tags: Oracle
